@@ -15,8 +15,8 @@ int main()
 	
 	GPIO_Init(GPIOC,&GPIO_InitStruct);// 配置端口模式
 	
-	// GPIO_SetBits(GPIOC,GPIO_Pin_13); // 将GPIO13设置为高电平
-	GPIO_ResetBits(GPIOC,GPIO_Pin_13); // 将GPIO13设置为低电平
+   // GPIO_SetBits(GPIOC,GPIO_Pin_13); // 将GPIO13设置为高电平
+	 GPIO_ResetBits(GPIOC,GPIO_Pin_13); // 将GPIO13设置为低电平
 	
 	while(1)
 	{
