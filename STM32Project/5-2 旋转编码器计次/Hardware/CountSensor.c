@@ -2,7 +2,7 @@
 
 int16_t Encoder_Count = 0;
 
-void CountSensorInit()
+void CountSensorInit(void)
 {
 	// 1.打开外设时钟，EXTI、NVIC外设的时钟一直处于打开状态，不需要再进行配置 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB,ENABLE);  // 开启GPIO外设时钟
