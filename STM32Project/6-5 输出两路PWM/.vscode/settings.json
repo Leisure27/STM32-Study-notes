@@ -3,6 +3,7 @@
         "*.cjson": "jsonc",
         "*.wxss": "css",
         "*.wxs": "javascript",
-        "pwm.h": "c"
+        "pwm.h": "c",
+        "motor.h": "c"
     }
 }
