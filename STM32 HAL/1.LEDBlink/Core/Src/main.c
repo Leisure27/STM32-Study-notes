@@ -96,8 +96,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-    HAL_Delay(100);
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET); // 引脚输出低电平
+    HAL_Delay(500);
+    HAL_GPIO_WritePin(GPIOC, LED_Pin, GPIO_PIN_SET); // 引脚输出高电平
+    // HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);   // 翻转GPIO输出的高低电平
+    HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
